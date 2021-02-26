@@ -42,4 +42,25 @@ eC = [(n, x) for n in eA for x in eB]
 
 #print(eC)
 
+# Imprimir elemento de la lista si concuerda con un parametro pasado
+# Print an element of a list if a given parameter matches 
 
+fruits = ['apple', 'banana', 'cherry', 'kiwi', 'mango']
+
+newlist = [x for x in fruits if 'a' in x]
+
+#print(newlist)
+
+# Colocar primera letra en mayuscula
+# Capitalize first letter
+
+newlist2 = [x.capitalize() for x in fruits]
+
+#print(newlist2)
+
+# Colocar todas las letras en mayuscula
+# Upper case all letters
+
+newlist3 = [x.upper() for x in fruits]
+
+#print(newlist3)
