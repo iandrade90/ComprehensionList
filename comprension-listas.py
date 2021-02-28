@@ -6,6 +6,7 @@
 
 # Crear un lista tomando en cuenta cierto rango
 # Creating a list within a range
+
 a = [n for n in range(1, 7)]
 
 #print(a)
@@ -63,4 +64,41 @@ newlist2 = [x.capitalize() for x in fruits]
 
 newlist3 = [x.upper() for x in fruits]
 
+
 #print(newlist3)
+
+#Trabajando con diccionarios
+#working with Dictionaries
+
+# Acceder a las keys de un diccionarios como listas
+# Accesing to the keys of a dict as lists
+
+dict_one = {
+  'Marca': 'Fiat',
+  'Modelo': 'Palio',
+  'Año': '2014'
+}
+
+itr = [[k for k in dict_one[v]] for v in dict_one.keys()]
+
+#Muestra cuales son las keys relacionados a los values
+#Shows the keys related to the values
+
+itr2 = [v for v in dict_one.values()]
+
+#Muestra cuales son los values relacionados a las keys
+#Shows the values related to the keys
+
+itr3 = [v for v in dict_one.keys()]
+
+#print(itr2)
+#print(itr3)
+
+#Muestra values y keys en tuplas
+#Tuples the values and keys
+
+itr4 = [v for v in dict_one.items()]
+
+print(itr2)
+print(itr3)
+print(itr4)
