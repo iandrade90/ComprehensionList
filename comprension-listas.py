@@ -99,6 +99,14 @@ itr3 = [v for v in dict_one.keys()]
 
 itr4 = [v for v in dict_one.items()]
 
-print(itr2)
-print(itr3)
-print(itr4)
+#print(itr2)
+#print(itr3)
+#print(itr4)
+
+#Copiar una lista
+#Copy a list
+
+list_to_copy = [1, 2, 3, 4, 5, 6]
+copied_list = [element for element in list_to_copy]
+
+#print(copied_list)
